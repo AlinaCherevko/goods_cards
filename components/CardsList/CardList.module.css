@@ -1,0 +1,26 @@
+.wrapper {
+  padding: 0 40px;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.item {
+  position: relative;
+  width: 200px;
+  height: 230px;
+  background-color: honeydew;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 120px;
+}
+.button {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background-color: #ffffff;
+}

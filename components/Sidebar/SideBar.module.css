@@ -1,0 +1,31 @@
+.wrapper {
+  min-width: 250px;
+  padding: 20px 5px 100px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.title {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.item {
+  font-size: 24px;
+  padding: 5px 10px;
+  border-radius: 5px 10px;
+  background-color: honeydew;
+  cursor: pointer;
+}
+.item:hover {
+  color: #ffffff;
+  background-color: rgb(182, 203, 182);
+}
+.selected {
+  color: #ffffff;
+  background-color: rgb(182, 203, 182);
+}

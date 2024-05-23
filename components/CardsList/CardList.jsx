@@ -1,20 +1,21 @@
 // import React from "react";
 import PropTypes from "prop-types";
+import Card from "../Card/Card";
 import css from "./CardList.module.css";
 
-const CardList = ({ goods }) => {
+const CardList = ({ goods, showQuantityInput }) => {
   return (
     <div className={css.wrapper}>
       <ul className={css.list}>
         {goods &&
           goods.map(({ _id, name, price }) => (
-            <li className={css.item} key={_id}>
-              <div className={css.description}>
-                <span className={css.name}>{name}</span>
-                <span className={css.price}>{price}</span>
-              </div>
-              <button className={css.button}>Add to Card</button>
-            </li>
+            <Card
+              key={_id}
+              _id={_id}
+              name={name}
+              price={price}
+              showQuantityInput={showQuantityInput}
+            />
           ))}
       </ul>
     </div>
@@ -22,13 +23,14 @@ const CardList = ({ goods }) => {
 };
 
 CardList.propTypes = {
+  showQuantityInput: PropTypes.bool,
   goods: PropTypes.arrayOf(
     PropTypes.shape({
       _id: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
       price: PropTypes.string.isRequired,
     })
-  ).isRequired,
+  ),
 };
 
 export default CardList;

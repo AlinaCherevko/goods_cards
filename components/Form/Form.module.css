@@ -1,7 +1,7 @@
 .form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   padding: 20px 40px 80px 10px;
   border: 1px solid gray;
   border-radius: 5px;
@@ -17,4 +17,6 @@
 }
 .input {
   width: 300px;
+  height: 30px;
+  border-radius: 6px;
 }

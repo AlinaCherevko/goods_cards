@@ -1,0 +1,13 @@
+.section {
+  display: flex;
+  margin-bottom: 30px;
+}
+.total {
+  font-size: 22px;
+  font-weight: 500;
+}
+.wrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}

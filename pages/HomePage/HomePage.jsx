@@ -43,7 +43,7 @@ const HomePage = () => {
   return (
     <div className={css.wrapper}>
       <SideBar className={css.sidebar} onSelect={onSelect} />
-      <CardList className={css.list} goods={goods} />
+      <CardList className={css.list} goods={goods} showQuantityInput={false} />
     </div>
   );
 };

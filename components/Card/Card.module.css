@@ -1,0 +1,37 @@
+.item {
+  position: relative;
+  width: 200px;
+  height: 230px;
+  background-color: honeydew;
+}
+.description {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 120px;
+}
+.button {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background-color: #ffffff;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+}
+.favorite {
+  color: #e44848;
+}
+.likeBtn {
+  background-color: transparent;
+}
+.input {
+  margin-top: 120px;
+  margin-left: auto;
+  display: block;
+  margin-right: auto;
+  width: 60px;
+  border-radius: 4px;
+  height: 20px;
+}
